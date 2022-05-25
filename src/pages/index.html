@@ -1,0 +1,155 @@
+{% set pageId = "page-home" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projeto-03</title>
+    {%block styles%}
+		 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
+     	 <link href="public/css/index.css" rel="stylesheet" type="text/css" />
+    {% endblock styles%}
+    <meta charset="utf-8" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+  </head>
+  <body>
+	{% block content %}
+		<header>
+		  <div class="container">
+			<div class="logo"></div><!--logo-->
+			<nav class="desktop-menu">
+			  <ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Serviços</a></li>
+				<li><a href="">Sobre</a></li>
+				<li><a href="">Contato</a></li>
+			  </ul>
+			</nav>
+			<nav class="mobile-menu">
+			  <ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Serviços</a></li>
+				<li><a href="">Sobre</a></li>
+				<li><a href="">Contato</a></li>
+			  </ul>
+			</nav>
+			<div class="clear"></div><!--clear-->
+			<div class="chamada1">
+			  <h2>Sistemas Próprios <br/>Para Empresas Autênticas</h2>
+			  <p>Seu software alinhado com seu negócio</p>
+			</div><!--chamada1-->
+		  </div><!--container-->
+		</header>
+		
+		<section class="section1">
+		  <div class="container">
+			<div class="section1-text">
+			  <h2>Desenvolvimento de sistemas únicos</h2>
+			  <p>Trabalhamos com desenvolvimento de:</p>
+			  <ul>
+				<li>Sites</li>
+				<li>Lojas Virtuais</li>
+				<li>Sistemas</li>
+			  </ul>
+			  <div class="clear"></div><!--clear-->
+			  <div class="button1-txt" id="contact">
+				Entre em contato
+			  </div><!--Texto-do-botão-->
+			</div><!--text-da-sessao1-->
+			<div class="device-section1"></div><!--sessao1-divice-->
+			<div class="clear"></div><!--clear-->
+		  </div><!--container-->
+		</section><!--sessao1-->
+		<section class="section2">
+		  <div class="container">
+			<h2>Desenvolvido de pessoas para pessoas</h2>
+			<p>Nossa equipe trabalha com o modelo Saas(Software as a service) para desenvolver a melhor solução para o seu problema! Sempre buscando alinhar nossos
+		softwares com os modelos de negócio de nossos clientes, para fornecer eficiência em nossos produtos.</p>
+			  <img src="images/mockup.jpg" />
+		  </div><!--container-->
+		</section><!--sessao2-->
+		<section class="section3">
+		  <div class="parte1">
+			<div class="wraper-parte1">
+			  <h2>Nosso time</h2>
+			  <p>
+				Pessoas dedicadas com muita sede por conhecimento e desafios
+			  </p>
+		  </div><!--wrape-parte-1-->
+		  </div><!--parte1-->
+		  <div class="parte2">
+			<div class="about">
+			  <div class="author">
+				<div class="wraper-author-title">
+				  <h2>João Pedro Weydt</h2>
+				  <p>Desenvolvedor</p>
+				</div><!--wraper-author-title-->
+				<div class="img-author"></div><!--image-autor-->
+			  </div><!--autor-->
+			  <div class="author-text">
+				<p>Estudante de desenvolvimento web Frontend<br>Conhecimento básico em <strong>Python</strong> e <strong>Javascript</strong><br>Proativo,
+			disciplinado, dedicado, criativo.</p>
+			  </div><!--texo-autor-->
+			</div><!--sobre-->
+			<div class="slider-bullets">
+			  <span style="background-color: rgb(170,170,170);"></span>
+			  <span></span>
+			  <span></span>
+			</div><!--slider-->
+		  </div><!--parte2-->
+		  <div class="clear"></div>
+		</section><!--sessao3-->
+		<section class="section4">
+		  <div class="container">
+			<div class="form">
+			  <h2>Entre em contato</h2>
+			  <p>Em caso de dúvidas entre em contato!!!<br>@_jpwf_<br></p>
+				<form>
+				  <input type="text" name="nome" placeholder="Nome"/>
+				  <input type="text" name="email" placeholder="E-mail"/>
+				  <textarea name="message" placeholder="Mensagem*"></textarea>
+				  <div class="clear"></div>
+				  <div><input id="insta" type="submit" value="send" /></div>
+				</form>
+
+			</div><!--form-->
+			<div class="map-wraper">
+			  <h2>Faça uma visita</h2>
+			  <div class="map-wraper2">
+				<div class="map-wraper3">
+				  <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"class="map" 
+				  id="gmap_canvas" 
+				  src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Rua%20General%20Canabarro%20485%20Rio%20de%20Janeiro+(Mapa,%20projeto%203)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://maps-generator.com/pt'>Maps-Generator.com/pt</a> <script type='text/javascript' 
+				  src='https://embedmaps.com/google-maps-authorization/script.js?id=e050687a2aa26c4e914251f99b5fdd32b759aac9'></script>
+				</div><!--mapa-wraper3-->
+			</div><!--mapa-wraper2-->
+			  
+		  </div><!--mapa-wraper-->
+			<div class="clear"></div>
+		  </div><!--container-->
+		</section><!--sessao4-->
+	  
+		<footer>
+		  <div class="container">
+			<p>Todos os direitos reservados</p>
+			<p>jpwf01@gmail.com</p>
+			<div class="clear"></div>
+		  </div><!--container-->
+		</footer>
+	{% endblock content%}
+  </body>
+	{% block script %}
+	  <script>
+		const contactButton =  document.getElementById("contact")
+		const instaButton = document.getElementById("insta")
+
+		contactButton.addEventListener("click", () =>{
+			window.open("https://github.com/jpwf/")
+		})
+		instaButton.addEventListener("click", () =>{
+			window.open("https://www.instagram.com/_jpwf_/")
+		})
+
+	  </script>
+	{% endblock script %}
+</html>
