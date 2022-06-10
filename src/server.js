@@ -13,11 +13,11 @@ nunjucks.configure("src/pages", {
 	watch: true
 })
 
-//nunjucks.configure("public/css", {
-//	express: server,
-//	noCache: true,
-//	watch: true
-//})
+// nunjucks.configure("public/css", {
+// 	// express: server,
+// 	noCache: true,
+// 	watch: true
+// })
 
 server.get("/", (req, res) =>{
 	return res.render("index.html")

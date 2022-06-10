@@ -3,9 +3,9 @@
 <html>
   <head>
     <title>Projeto-03</title>
-    {%block styles%}
+    {% block styles %}
 		 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
-     	 <link href="public/css/index.css" rel="stylesheet" type="text/css" />
+		 <link rel="stylesheet" type="text/css" href="/styles/home.css"/>
     {% endblock styles%}
     <meta charset="utf-8" />
     <meta name="description" content=""/>
@@ -139,16 +139,16 @@
 	{% endblock content%}
   </body>
 	{% block script %}
-	  <script>
-		const contactButton =  document.getElementById("contact")
-		const instaButton = document.getElementById("insta")
+	  <script src="/JS/index.js">
+		// const contactButton =  document.getElementById("contact")
+		// const instaButton = document.getElementById("insta")
 
-		contactButton.addEventListener("click", () =>{
-			window.open("https://github.com/jpwf/")
-		})
-		instaButton.addEventListener("click", () =>{
-			window.open("https://www.instagram.com/_jpwf_/")
-		})
+		// contactButton.addEventListener("click", () =>{
+		// 	window.open("https://github.com/jpwf/")
+		// })
+		// instaButton.addEventListener("click", () =>{
+		// 	window.open("https://www.instagram.com/_jpwf_/")
+		// })
 
 	  </script>
 	{% endblock script %}
